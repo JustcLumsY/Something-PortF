@@ -4,10 +4,10 @@ const ctx = canvas.getContext('2d');
 canvas.height = window.innerHeight;
 canvas.width = window.innerWidth;
 
-canvas.addEventListener("resize", function(){
+window.addEventListener('resize', function(){
     canvas.height = window.innerHeight;
-    canvas.window = window.innerWidth;  
-})
+    canvas.width = window.innerWidth;  
+});
 
 let hue = 0;
 
